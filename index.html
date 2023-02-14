@@ -5,61 +5,72 @@
     <link href="style.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Dashboard</title>
 </head>
 <body class="d-flex ">
     <header>
      <div class="header_content d-flex ">
-                <div class="logo"><img src="img/logo.svg"><h1>Dashboard</h1><span>v.01</span></div>
+                <div class="logo position-relative"><img src="img/logo.svg"><h1>Dashboard</h1><span>v.01</span></div>
                 <div class="burger-menu"><span></span></div>
-                <div class="menu-list d-flex flex-column justify-content-between align-items">
-                    <nav class="header-menu">
+                <div class="menu-list d-flex flex-column justify-content-between position-relative">
+                    <nav class="header-menu position-relative">
                         <ul class="top_nav">
-                            <a>Dashboard</a>
-                            <a>Product</a>
-                            <a>Customers</a>
-                            <a>Income</a>
-                            <a>Promote</a>
-                            <a>help</a>
+                            <a><span>Dashboard</span></a>
+                            <a><img src="img/product.svg">Product <img src="img/arrow3.svg"></a>
+                            <a><img src="img/customers.svg">Customers <img src="img/arrow3.svg"></a>
+                            <a><img src="img/income.svg">Income <img src="img/arrow3.svg"></a>
+                            <a><img src="img/promote.svg">Promote <img src="img/arrow3.svg"></a>
+                            <a><img src="img/help.svg">Help <img src="img/arrow3.svg"></a>
                         </ul>
+                        <img src="img/dashboard.svg" class=" dashboard position-absolute">
+                        <img src="img/arrow3.svg" class=" arrow position-absolute">
                     </nav>
                     <div class="avatar d-flex flex-row justify-content-center align-items-center gap-3">
                         <div><img src="img/ava.svg"></div>
                         <div>
                             <h3> Evano</h3>
-                            <h4> Project Manager</h4>
+                            <p> Project Manager</p>
                         </div>
                     </div>
                 </div>
      </div>
      </header>
-     <main class="d-flex flex-column align-items-center ">
+     <main class="d-flex flex-column ">
         <div class="title_main">
           <img src = "img/hello.svg">
         </div>
         <div class="wrapper_form ">
-               <div class="form_header d-flex flex-wrap flex-row justify-content-evenly align-items-center">
+               <div class="form_header d-flex flex-wrap flex-row justify-content-between align-items-center">
                    <div class="form_header-title">
                     <h2>All costumers</h2>
                     <p>Active Members</p>
                    </div>
-                   <div class="form_header-search">
+                   <div class="form_header-search position-relative">
                     <input type="text" placeholder="Search">
                     <img src = "img/search.svg" class="position-absolute" >
                    </div>
                </div>
                <div class="block_form-info"> 
-                 <ul class="d-flex justify-content-evenly ">
+                 <ul class=" d-flex justify-content-between ps-0">
                         <li>Customer name </li>
                         <li> Company</li>
                         <li>Phone Number </li>
                         <li>Email </li>
                         <li>Country</li>
-                        <li>Status</li>
+                        <li class="d-flex justify-content-center">Status</li>
                        </ul>
                     <div class="block_form-card">
-                       <ul class="d-flex justify-content-evenly ">
+                       <ul class="d-flex justify-content-between align-items-start p-0">
+                        <li>Customer name </li>
+                        <li> Company</li>
+                        <li>Phone Number </li>
+                        <li>Email </li>
+                        <li>Country</li>
+                        <li><button>Active</button></li>
+                       </ul>
+                        <ul class="d-flex justify-content-between p-0 ">
                         <li>Customer name </li>
                         <li> Company</li>
                         <li>Phone Number </li>
@@ -67,7 +78,7 @@
                         <li>Country</li>
                         <li>Status</li>
                        </ul>
-                        <ul class="d-flex justify-content-evenly ">
+                        <ul class="d-flex justify-content-between p-0 ">
                         <li>Customer name </li>
                         <li> Company</li>
                         <li>Phone Number </li>
@@ -75,7 +86,7 @@
                         <li>Country</li>
                         <li>Status</li>
                        </ul>
-                        <ul class="d-flex justify-content-evenly ">
+                        <ul class="d-flex justify-content-between p-0 ">
                         <li>Customer name </li>
                         <li> Company</li>
                         <li>Phone Number </li>
@@ -83,7 +94,7 @@
                         <li>Country</li>
                         <li>Status</li>
                        </ul>
-                        <ul class="d-flex justify-content-evenly ">
+                        <ul class="d-flex justify-content-between p-0 ">
                         <li>Customer name </li>
                         <li> Company</li>
                         <li>Phone Number </li>
@@ -91,7 +102,7 @@
                         <li>Country</li>
                         <li>Status</li>
                        </ul>
-                        <ul class="d-flex justify-content-evenly ">
+                        <ul class="d-flex justify-content-between p-0">
                         <li>Customer name </li>
                         <li> Company</li>
                         <li>Phone Number </li>
@@ -99,7 +110,7 @@
                         <li>Country</li>
                         <li>Status</li>
                        </ul>
-                        <ul class="d-flex justify-content-evenly ">
+                        <ul class="d-flex justify-content-between p-0">
                         <li>Customer name </li>
                         <li> Company</li>
                         <li>Phone Number </li>
@@ -107,15 +118,7 @@
                         <li>Country</li>
                         <li>Status</li>
                        </ul>
-                        <ul class="d-flex justify-content-evenly ">
-                        <li>Customer name </li>
-                        <li> Company</li>
-                        <li>Phone Number </li>
-                        <li>Email </li>
-                        <li>Country</li>
-                        <li>Status</li>
-                       </ul>
-                        <ul class="d-flex justify-content-evenly ">
+                        <ul class="d-flex justify-content-between p-0">
                         <li>Customer name </li>
                         <li> Company</li>
                         <li>Phone Number </li>
@@ -125,9 +128,9 @@
                        </ul>
                     </div>
                </div>
-               <div class="d-flex justify-content-evenly ">
+               <div class="d-flex justify-content-between pt-1 ">
                 <p>Showing data 1 to 8 of  256K entries</p>
-                    <ul class="d-flex justify-content-evenly ">
+                    <ul class=" clicker d-flex justify-content-evenly ">
                         <li><img src = "img/arrow1.svg"></li>
                         <li>1</li>
                         <li>2</li>
@@ -137,7 +140,7 @@
                         <li>40</li>
                         <li><img src = "img/arrow2.svg"></li>
                        </ul>
-               </div>
+               </div>        
         </div>
      </main>
 </body>
