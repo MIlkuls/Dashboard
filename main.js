@@ -27,65 +27,65 @@ const Customer= {
         position:true
      },
      {
-        name:'Jane Cooper',
-        company: 'Microsoft',
-        number: '(225) 555-0118',
-        email:'jane@microsoft.com',
-        country:'United States',
+        name:'Floyd Miles',
+        company: 'Adobe',
+        number: '(205) 555-0100',
+        email:'floyd@yahoo.com',
+        country:'Kiribati',
         status: 'Inactive',
         position:false
      },
      {
-        name:'Jane Cooper',
-        company: 'Microsoft',
-        number: '(225) 555-0118',
-        email:'jane@microsoft.com',
-        country:'United States',
+        name:'Ronald Richards',
+        company: 'Adobe',
+        number: '(302) 555-0107',
+        email:'ronald@adobe.com',
+        country:'Israel',
         status: 'Inactive',
         position:false
    },
     {
-        name:'Jane Cooper',
-        company: 'Microsoft',
-        number: '(225) 555-0118',
-        email:'jane@microsoft.com',
-        country:'United States',
+        name:'Marvin McKinney',
+        company: 'Tesla',
+        number: '(252) 555-0126',
+        email:'marvin@tesla.com',
+        country:'Iran',
         status: 'Active',
         position:true
    },
    {
-        name:'Jane Cooper',
-        company: 'Microsoft',
-        number: '(225) 555-0118',
-        email:'jane@microsoft.com',
-        country:'United States',
+        name:'Jerome Bell',
+        company: 'Google',
+        number: '(629) 555-0129',
+        email:'jerome@google.com',
+        country:'Réunion',
         status: 'Active',
         position:true
    },
    {
-        name:'Jane Cooper',
+        name:'Kathryn Murphy',
         company: 'Microsoft',
-        number: '(225) 555-0118',
-        email:'jane@microsoft.com',
-        country:'United States',
+        number: '(406) 555-0120',
+        email:'kathryn@microsoft.com',
+        country:'Curaçao',
         status: 'Active',
         position:true
    },
    {
-        name:'Jane Cooper',
-        company: 'Microsoft',
-        number: '(225) 555-0118',
-        email:'jane@microsoft.com',
-        country:'United States',
+        name:'Jacob Jones',
+        company: 'Yahoo',
+        number: '(208) 555-0112',
+        email:'jacob@yahoo.com',
+        country:'Brazil',
         status: 'Active',
         position:true
    },
    {
-        name:'Jane Cooper',
-        company: 'Microsoft',
-        number: '(225) 555-0118',
-        email:'jane@microsoft.com',
-        country:'United States',
+        name:'Kristin Watson',
+        company: 'Facebook',
+        number: '(704) 555-0127',
+        email:'kristin@facebook.com',
+        country:'Åland Islands',
         status: 'Inactive',
         position:false
    }
@@ -99,13 +99,16 @@ const Form = document.querySelector('.block_form-card')
  
 let clas='';
 
+
 function createPerson (person,parent){
 parent.innerHTML=''
    person.forEach((el) => {
 
        if(el.position){
-        clas = 'active';
+        clas = 'active_form';
       }else clas = 'inactive'
+
+    
 
       parent.innerHTML += `
             <ul class=" d-flex justify-content-between ps-0">
@@ -165,7 +168,7 @@ parent.innerHTML=''
       }else clas = 'inactive'
 
       parent.innerHTML += `
-      <ul class="top_nav d-flex flex-row justify-content-between ">
+      <ul class="top_nav d-flex flex-row  align-items-center justify-content-center">
             <img src="${el.logo}" class="logo_menu">
             <a><span>${el.title}</span></a>
             <img src="${Menu.arrow}" class=" arrow ">

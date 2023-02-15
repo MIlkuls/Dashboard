@@ -26,17 +26,18 @@ body{
     max-height:100%;
     max-width:100%;
     width: 100%;
-    gap:40px;
+    
 }
 header{
     padding-left:30px;
     max-width: 308px;
+    background-color:white;
 }
 .header_content{
+    padding-right: 50px;
     padding-top: 45px;
     height: 100vh;
     margin: 0 auto;
-    
     flex-direction: column;
 }
 .avatar{
@@ -56,6 +57,7 @@ body.lock{
     overflow: hidden;
 }
 .logo{
+    padding-top:50px;
     display: flex;
     gap:5px;
     cursor: pointer;
@@ -86,7 +88,7 @@ color: #000000;
 .top_nav{
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap:10px;
 }
 .top_nav a:hover{
     color: gray;
@@ -138,6 +140,10 @@ color: #000000;
     transform: scale(0);
 }
 
+.logo_img{
+    padding-bottom: 5px;
+}
+
 main{
  width: 100vw ;
  gap: 40px;
@@ -177,9 +183,7 @@ main{
     border-radius:30px;
 }
 .block_form-info ul{
-    border-bottom: 1px solid #EEEEEE;
-    color: #B5B7C0;
-    height: 37px;
+    gap:5px;
 }
 
 .block_form-info ul :last-child{
@@ -187,10 +191,29 @@ main{
 }
 
 .block_form-card ul {
+    border-bottom: 1px solid #EEEEEE;
     color: #292D32;
     height: 47px;
 }
-.active{
+.block_form-info li{
+  width: 150px;
+}
+
+.block_form-card li{
+   width: 170px;
+}
+.span_line{
+    border-bottom: 1px solid #EEEEEE;
+    width: inherit;
+    top:125px;
+    right:0px;
+}
+@media(max-width:874px){
+    .span_line{
+        top:145px; 
+    }
+}
+.active_form{
 width: 80px;
 height: 29px;
 background: rgba(22, 192, 152, 0.38);
@@ -234,12 +257,24 @@ color:#DF0404;
     transition: all 0.5s ease-out;
 }
 
-.dashboard{
-    top:0px;
+ header ul{
+border-radius: 8px;
+padding: 20px;
+margin-bottom: 0px;
+
 }
-.arrow{
-    top:2px;
-    right:0px;
+.top_nav span{
+    display: block;
+    width: 80px;
+    margin-right: 50px;
+}
+.header-menu{
+    transition: all 0.5s ease-out;
+}
+.header-menu :hover{
+    color:#EEEEEE;
+    background-color:#5932EA;
+    transition: all 0.5s ease-out;
 }
 
 
@@ -249,15 +284,18 @@ color:#DF0404;
         align-items:start;
     }
     header{
-        padding-top: 50px;
-        height:200px;
+        background-color:#F9FBFF;
+        height:350px;
     }
     .burger-menu{
         display: block;
+        padding: 10px;
     }
     .header-menu{
         display: flex;
         position: fixed;
+        flex-direction: column;
+        justify-content: start;
         top: -200%;
         left: 0;
         width: 100%;
@@ -265,12 +303,12 @@ color:#DF0404;
         height: 100%;
         transition: all 0.3s ease 0s;
         overflow: auto;
+        z-index: 99;
     }
     .header-menu.active{
         top: 0;
     }
     .header_content{
-        min-width: 650px;
         justify-content: space-evenly;
         align-items:start;
     }
@@ -290,11 +328,11 @@ color:#DF0404;
         display: none;
     }
     main{
-       
+        margin: 30px;
         padding: 0px;
     }
     .avatar{
         position: absolute;
-        top:175px;
+        top:250px;
     }
 }
